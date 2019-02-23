@@ -11,13 +11,13 @@ This is useful when the user selects a color, especially when you want to use ma
 ## Usage
 This library is created with the assumption of using a storyboard.
 
-1. After placing the ViewController on the storyboard, inherit the `PastelColorPaletteViewController` and `PastelColorPaletteView` class using the Attribute inspector.
+1. After placing the ViewController on the storyboard, inherit the `TSColorPaletteViewController` and `TSColorPaletteView` class using the Attribute inspector.
 2. Please set a delegate for the object you want to notify.
 
     ```Swift
     //example
-    let pastelColorPaletteVC = PastelColorPaletteViewController()
-    pastelColorPaletteVC.delegate = self
+    let tsColorPaletteVC = TSColorPaletteViewController()
+    tsColorPaletteVC.delegate = self
     ```
 
 3. You can also set the processing you want to execute when receiving notifications.
