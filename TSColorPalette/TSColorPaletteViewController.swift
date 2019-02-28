@@ -8,13 +8,14 @@
 
 import UIKit
 
-public protocol TSColorPaletteViewControllerDelegate: NSObjectProtocol {
+public protocol TSColorPaletteViewControllerDelegate {
     func paletteViewController(color: UIColor)
 }
 
+
 public class TSColorPaletteViewController: UIViewController, TSColorPaletteViewDelegate {
     
-    public weak var delegate: TSColorPaletteViewControllerDelegate?
+    public var delegate: TSColorPaletteViewControllerDelegate?
     
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ public class TSColorPaletteViewController: UIViewController, TSColorPaletteViewD
     //TSColorPaletteDelegate
     public func paletteView(didSelect: UIColor) {
         delegate?.paletteViewController(color: didSelect)
+        print(didSelect)
     }
     
 }

@@ -9,14 +9,25 @@
 import UIKit
 import TSColorPalette
 
-class DemoViewController: UIViewController {
+class DemoViewController: UIViewController, UIPopoverPresentationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
+    override func prepare (for segue: UIStoryboardSegue, sender: Any?) {
+        let popoverCtrl = segue.destination.popoverPresentationController
+        if sender is UIButton {
+            popoverCtrl?.sourceRect = (sender as! UIButton).bounds
+        }
+        popoverCtrl?.delegate = self
+    }
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
+        return .none
+    }
+
 
     /*
     // MARK: - Navigation

@@ -12,12 +12,12 @@
 		FD87C6EC220C79E800FA112A /* TSColorPaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD87C6EB220C79E700FA112A /* TSColorPaletteView.swift */; };
 		FD87C6EE220C7A4E00FA112A /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD87C6ED220C7A4E00FA112A /* UIColorHex.swift */; };
 		FD87C6FA220C83B600FA112A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD87C6F9220C83B600FA112A /* AppDelegate.swift */; };
-		FD87C6FC220C83B600FA112A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD87C6FB220C83B600FA112A /* ViewController.swift */; };
 		FD87C6FF220C83B600FA112A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD87C6FD220C83B600FA112A /* Main.storyboard */; };
 		FD87C701220C83B700FA112A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD87C700220C83B700FA112A /* Assets.xcassets */; };
 		FD87C704220C83B700FA112A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD87C702220C83B700FA112A /* LaunchScreen.storyboard */; };
 		FD87C70B220C856200FA112A /* TSColorPalette.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD87C6C2220C764500FA112A /* TSColorPalette.framework */; };
 		FD87C70D220C885900FA112A /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD87C70C220C885900FA112A /* DemoViewController.swift */; };
+		FDD6D90D2225932C00205CBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD87C6FD220C83B600FA112A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,12 +29,11 @@
 		FD87C6ED220C7A4E00FA112A /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
 		FD87C6F7220C83B600FA112A /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD87C6F9220C83B600FA112A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD87C6FB220C83B600FA112A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD87C6FE220C83B600FA112A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD87C700220C83B700FA112A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD87C703220C83B700FA112A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD87C705220C83B700FA112A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD87C70C220C885900FA112A /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		FD87C70C220C885900FA112A /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DemoViewController.swift; path = Demo/DemoViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				FD87C6F9220C83B600FA112A /* AppDelegate.swift */,
-				FD87C6FB220C83B600FA112A /* ViewController.swift */,
 				FD87C70C220C885900FA112A /* DemoViewController.swift */,
 				FD87C6FD220C83B600FA112A /* Main.storyboard */,
 				FD87C700220C83B700FA112A /* Assets.xcassets */,
@@ -200,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD6D90D2225932C00205CBA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD87C70D220C885900FA112A /* DemoViewController.swift in Sources */,
-				FD87C6FC220C83B600FA112A /* ViewController.swift in Sources */,
 				FD87C6FA220C83B600FA112A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

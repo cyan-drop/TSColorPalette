@@ -1,0 +1,11 @@
+framework module TSColorPalette {
+  umbrella header "TSColorPalette.h"
+
+  export *
+  module * { export * }
+}
+
+module TSColorPalette.Swift {
+    header "TSColorPalette-Swift.h"
+    requires objc
+}
