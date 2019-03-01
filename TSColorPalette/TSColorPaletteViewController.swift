@@ -15,7 +15,7 @@ public protocol TSColorPaletteViewControllerDelegate {
 
 public class TSColorPaletteViewController: UIViewController, TSColorPaletteViewDelegate {
     
-    public var delegate: TSColorPaletteViewControllerDelegate?
+    public weak var delegate: TSColorPaletteViewControllerDelegate?
     
     override public func viewDidLoad() {
         super.viewDidLoad()
