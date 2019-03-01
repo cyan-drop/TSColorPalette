@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol TSColorPaletteViewControllerDelegate {
+public protocol TSColorPaletteViewControllerDelegate: class {
     func paletteViewController(color: UIColor)
 }
 
