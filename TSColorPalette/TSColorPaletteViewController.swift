@@ -24,7 +24,6 @@ public class TSColorPaletteViewController: UIViewController, TSColorPaletteViewD
     //TSColorPaletteDelegate
     public func paletteView(didSelect: UIColor) {
         delegate?.paletteViewController(color: didSelect)
-        print(didSelect)
     }
     
 }
